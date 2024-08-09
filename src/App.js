@@ -3,7 +3,11 @@ import TitleScreen from './TitleScreen';
 import QuestionCard from './QuestionComponent';
 import './App.css'
 
+// Created the Second Task 
+
+// Questions asked in questionnaire
 const questions = [
+  // In order to have different color associated with buttons I have coded the background and text here and then used this in QuestionCOmponent.jsx
   {
     text: (
       <>
@@ -59,9 +63,11 @@ function App() {
     const completed = localStorage.getItem('questionsCompleted');
     if (completed) {
       setIsCompleted(true);
+      // This will make sure even if we reload we can only attempt the questionnarie once 
     }
   }, []);
 
+  // To Move to next question
   const handleNext = () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
@@ -71,6 +77,7 @@ function App() {
     }
   };
 
+  // After Completion TitleScreen is showed
   if (isCompleted) {
     return <TitleScreen />;
   }
