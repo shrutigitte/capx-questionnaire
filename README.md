@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-I have made the Second Task
+### You Can answer the questions only once per system no matter how many times you reload
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
